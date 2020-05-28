@@ -12,7 +12,7 @@ Hint: use the modulo operator (%) to figure out if it's a multiple of 3/5. Make 
 Hint: the order of conditional statements is important!
 */
 
-const jackpot = num => {
+const findJackpots = num => {
     for(i = 0; i <= num; i++) {
         if(i % 3 === 0 && i % 5 === 0) {
             console.log('Jackpot!');
@@ -25,7 +25,7 @@ const jackpot = num => {
         }
     }
 }
-jackpot(100);
+findJackpots(100);
 
 /*
 2.
@@ -35,18 +35,20 @@ Using JavaScript only (adding HTML to index.html is NOT allowed), create a funct
 - When the button is clicked, inserts an image URL into an <img> tag and remove the button
 - Use the following image URL: https://avatars3.githubusercontent.com/u/20858568?s=200&v=4
 */
-
-const button = document.createElement('button');
-button.innerText = 'Click Me!';
-document.body.appendChild(button);
-const img = document.createElement('img');
-document.body.appendChild(img);
-
-button.addEventListener('click', e => {
-    img.setAttribute('src', 'https://avatars3.githubusercontent.com/u/20858568?s=200&v=4');
-    img.setAttribute('alt', 'Hack Your Future Logo');
-    e.target.remove();
-})
+const clickForHYFLogo = () => {
+    const button = document.createElement('button');
+    button.innerText = 'Click Me!';
+    document.body.appendChild(button);
+    const img = document.createElement('img');
+    document.body.appendChild(img);
+    
+    button.addEventListener('click', e => {
+        img.setAttribute('src', 'https://avatars3.githubusercontent.com/u/20858568?s=200&v=4');
+        img.setAttribute('alt', 'Hack Your Future Logo');
+        e.target.remove();
+    })
+}
+clickForHYFLogo();
 
 /* 
 3. 
