@@ -12,7 +12,7 @@ Welcome to the final JavaScript test!
 
 - Yusuf Cosar
 - Onder Dogan
-- Omer Burak Keskinkilic
+- Omer Keskin
 - Anis Alkomem
 
 **Version 2**
